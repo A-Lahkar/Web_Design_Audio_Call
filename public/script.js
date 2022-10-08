@@ -8,7 +8,7 @@ var peer = new Peer(undefined, {
 
 const user = prompt("Enter your name");
 
-$(".overlay").append(`<h2 id="name">${user}</h2>`)
+$(".overlay-video").append(`<h2 id="name">${user}</h2>`)
 
 const myVideo = document.createElement("video");
 myVideo.muted = true;
