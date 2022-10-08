@@ -54,6 +54,39 @@ video {
   background-color: black;
   position:relative;
   z-index:0;
+    -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.overlay {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.overlay h2 {
+    background: #000 none repeat scroll 0 0;
+    color: tan;
+    font-weight: 600;
+    margin: 2rem 3rem 0;
+    mix-blend-mode: overlay;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.overlay {
+  position:absolute;
+  top:10%;
+  left:10%;
+  z-index:1;
 }
 
 #users {
@@ -65,12 +98,7 @@ video {
   background-color: var(--main-dark);
 }
 
-.overlay {
-  position:absolute;
-  top:10%;
-  left:10%;
-  z-index:1;
-}
+
 
 .user-container { position:relative; }
 
