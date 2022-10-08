@@ -6,6 +6,9 @@ var peer = new Peer(undefined, {
     port: "443",
 });
 
+const myVideo = document.createElement("video");
+myVideo.muted = true;
+
 let myStream;
 
 navigator.mediaDevices
