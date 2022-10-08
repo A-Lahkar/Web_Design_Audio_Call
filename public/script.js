@@ -6,9 +6,6 @@ var peer = new Peer(undefined, {
     port: "443",
 });
 
-const myVideo = document.createElement("video");
-myVideo.muted = true;
-
 let myStream;
 
 navigator.mediaDevices
@@ -22,7 +19,7 @@ navigator.mediaDevices
 
         peer.on("call", (call) => {
             call.answer(stream)
-            
+            const video = document.createElement("video")
             call.on("stream", (userVideoStream) => {
                 addVideoStream(video, userVideoStream)
             })
