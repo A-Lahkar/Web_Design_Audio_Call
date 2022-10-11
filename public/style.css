@@ -60,6 +60,18 @@ video {
      object-position: center;
 }
 
+
+#audio-grid{
+  flex-grow:  1;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  padding: 1rem;
+  background-color: var(--main-dark);
+}
+
 .overlay-video {
   min-height: 100vh;
   display: -webkit-box;
