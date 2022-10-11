@@ -48,7 +48,7 @@ function addVideoStream(video, stream) {
     video.srcObject = stream;
     video.addEventListener("loadedmetadata", () => {
         video.play();
-        $("#video_grid").append(video)
+        $("#audio-grid").append(video)
     });
 };
 
